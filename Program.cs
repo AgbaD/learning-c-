@@ -15,6 +15,14 @@ namespace learning_csharp
 
             // Question2 //
             Console.WriteLine("Factorial of 5 is: {0}", Q2(5));
+
+            // Question4 //
+            Console.Write(": ");
+            string nums = Console.ReadLine();
+            foreach (string i in Q4(nums))
+            {
+                Console.WriteLine(Q4(i));
+            }
         }
 
         // Question1 //
@@ -47,6 +55,11 @@ namespace learning_csharp
             return a * Q2(a - 1);
         }
 
-        // Question3 //
+        // Question4 //
+        static string[] Q4(string nums)
+        {
+            string[] num = nums.Split(", ");
+            return num;
+        }
     }
 }
